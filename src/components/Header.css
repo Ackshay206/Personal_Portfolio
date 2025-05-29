@@ -1,0 +1,184 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e1e1e;
+  color: white;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 0.75rem 0; /* Reduced from 1rem to 0.75rem */
+}
+
+.header.scrolled {
+  background-color: rgba(30, 30, 30, 0.98); /* Increased from 0.95 to 0.98 */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  opacity: 85%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px; /* Reduced from 60px to 50px */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.logo {
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-bracket {
+  color: white;
+}
+
+.logo-text2 {
+  color: white;
+}
+
+.logo-text1 {
+  color: #f97316;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  position: relative;
+  padding: 0.5rem 1rem; /* Added padding for float effect */
+  border-radius: 0.5rem; /* Added border radius */
+  transition: all 0.3s ease;
+}
+
+/* Float effect on hover */
+.nav-links a:hover {
+  transform: translateY(-2px); /* Float up slightly */
+  background-color: rgba(78, 33, 1, 0.1); /* Subtle background */
+  color:#f97316
+}
+
+/* Orange underline effect */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #f97316;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 80%; /* Underline expands on hover */
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: white;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem; /* Added padding for float effect */
+  border-radius: 0.5rem; /* Added border radius */
+}
+
+/* Float effect for social icons */
+.social-links a:hover {
+  color: #f97316;
+  transform: translateY(-2px); /* Float up slightly */
+  background-color: rgba(249, 115, 22, 0.1); /* Subtle background */
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2); /* Floating shadow */
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  background-color: rgba(249, 115, 22, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem 0; /* Further reduced for mobile */
+  }
+
+  .nav {
+    height: 45px; /* Reduced for mobile */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 65px; /* Adjusted for reduced header height */
+    left: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    flex-direction: column;
+    padding: 2rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    gap: 1.5rem;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(249, 115, 22, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .social-links {
+    display: none;
+  }
+}
