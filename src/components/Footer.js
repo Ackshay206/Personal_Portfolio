@@ -43,13 +43,13 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-title">Connect</h4>
             <div className="footer-social">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Ackshay206" target="_blank" rel="noopener noreferrer">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/ackshay-n-r/" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:hello@yourname.com">
+              <a href="mailto:ackshaynr485@gmail.com">
                 <Mail size={24} />
               </a>
             </div>

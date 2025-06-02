@@ -5,7 +5,8 @@ import './Publications.css';
 const Publications = () => {
   const handleViewPublications = () => {
     // Add your publications link here
-    alert('Publications would open here!');
+
+    window.open('https://scholar.google.com/citations?user=vsfuS4oAAAAJ&hl=en&oi=ao', '_blank');
   };
 
   return (
@@ -17,8 +18,8 @@ const Publications = () => {
           </div>
           <h2 className="section-title">Publications</h2>
           <p className="section-description">
-            Research contributions in AI/ML, computer vision, and natural language processing. 
-            Publications available on arXiv and presented at leading conferences.
+            Research contributions in AI/ML and computer vision. 
+            Publications available on Springer and presented at leading conferences.
           </p>
           <button className="btn-primary" onClick={handleViewPublications}>
             <ExternalLink size={16} />

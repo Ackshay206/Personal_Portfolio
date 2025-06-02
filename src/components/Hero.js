@@ -204,12 +204,12 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const resumeUrl = resumeType === 'AI/ML' 
-      ? '/resumes/Your-Name-AI-ML-Resume.pdf' 
-      : '/resumes/Your-Name-SWE-Resume.pdf';
+      ? '/resumes/Resume-ackshaynr-AIML.pdf' 
+      : '/resumes/Resume-ackshaynr-SDE.pdf';
     
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = `Your-Name-${resumeType.replace('/', '-')}-Resume.pdf`;
+    link.download = `AckshayNR-${resumeType.replace('/', '-')}-Resume.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

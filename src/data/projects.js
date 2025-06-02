@@ -1,62 +1,62 @@
 export const projectsData = [
   {
     id: 1,
-    title: "AI-Powered Chatbot",
-    description: "Intelligent conversational AI built with transformers and deployed using FastAPI. Features context-aware responses and sentiment analysis.",
-    category: "AI/ML",
-    tags: ["Python", "PyTorch", "FastAPI", "React", "Docker"],
-    image: "/api/placeholder/400/250",
-    githubUrl: "https://github.com/yourusername/ai-chatbot",
-    liveUrl: "https://your-chatbot-demo.com"
+    title: "SciChat - Research paper Chatbot",
+    description: "AI Chatbot Tool powered by Retrieval-Augmented Generation to chat with Scientific Papers and extract key information.",
+    category: ["AI/ML","Full Stack"],
+    tags: ["Python", "LangChain", "FastAPI", "React", "Pinecone"],
+    image: "/images/projects/Scichat.png",
+    githubUrl: "https://github.com/Ackshay206/SciChat-Chat-with-Scientific-Papers",
+    liveUrl: ""
   },
   {
     id: 2,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with payment integration, inventory management, and real-time analytics dashboard.",
-    category: "Full Stack",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-    image: "/api/placeholder/400/250",
-    githubUrl: "https://github.com/yourusername/ecommerce-platform",
-    liveUrl: "https://your-ecommerce-demo.com"
+    title: "CarbonCast- Carbon Emission Forecasting",
+    description: "An advanced Machine Learning dashboard that combines machine learning models and large language models (LLMs) to forecast carbon emissions, analyze historical trends, and generate AI-powered policy recommendations.",
+    category: "AI/ML",
+    tags: ["Streamlit", "PyTorch", "ARIMA", "OpenAi ", "Plotly"],
+    image: "/images/projects/Carboncast.png",
+    githubUrl: "https://github.com/Ackshay206/CarbonCast--Carbon_Emission_Trend_Forecast_and_Analysis",
+    liveUrl: "https://carboncast.streamlit.app/"
   },
   {
     id: 3,
-    title: "Computer Vision API",
-    description: "REST API for object detection and image classification using YOLO and CNN models. Processes 1000+ images per minute.",
+    title: "AI-Driven Hashtag Recommender Systrem",
+    description: "Hybrid hashtag recommendation model using a custom LDA with variational inference and vector-based similarity search",
     category: "AI/ML",
-    tags: ["Python", "TensorFlow", "OpenCV", "Flask", "Redis"],
-    image: "/api/placeholder/400/250",
-    githubUrl: "https://github.com/yourusername/computer-vision-api",
-    liveUrl: "https://your-cv-api-demo.com"
+    tags: ["Python", "Numpy", "Scikit-learn", "Flask", "Tweepy"],
+    image: "/images/projects/Social-LDA.png",
+    githubUrl: "https://github.com/Ackshay206/Social_Media_Tag_Generation_LDA",
+    liveUrl: ""
   },
   {
     id: 4,
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates, team chat, and progress tracking.",
-    category: "Web Dev",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    image: "/api/placeholder/400/250",
-    githubUrl: "https://github.com/yourusername/task-management",
-    liveUrl: "https://your-task-app-demo.com"
+    title: "Cook's Cabinet- Inventory Management App",
+    description: " Grocery inventory management system using Next.js, MaterialUI for frontend and Firebase. AI Recipe suggestions using llama 3.1.8b. ",
+    category: "Full Stack",
+    tags: ["NextJs", "MaterialUI", "Firebase", "Llama"],
+    image: "/images/projects/Cooks-Cabinet.png",
+    githubUrl: "https://github.com/Ackshay206/Inventory_App",
+    liveUrl: "https://cooks-cabinet.vercel.app/"
   },
   {
     id: 5,
-    title: "Predictive Analytics Dashboard",
-    description: "Machine learning dashboard for sales forecasting and trend analysis with interactive visualizations.",
-    category: "AI/ML",
-    tags: ["Python", "Scikit-learn", "Plotly", "Django"],
-    image: "/api/placeholder/400/250",
-    githubUrl: "https://github.com/yourusername/predictive-analytics",
-    liveUrl: "https://your-analytics-demo.com"
+    title: "DeepWeldNet - Weld Defect Segmentation and Detection",
+    description: "2-stage end-to-end Weld Inspection and Classification pipeline using Pytorch to accurately segment and identify weld defects",
+    category: "Research",
+    tags: ["Python", "Pytorch", "OpenCV", "Matplotlib"],
+    image: "/images/projects/Welnet.png",
+    githubUrl: "",
+    liveUrl: ""
   },
   {
     id: 6,
-    title: "Social Media Platform",
-    description: "Modern social networking app with real-time messaging, content sharing, and algorithmic feed.",
-    category: "Full Stack",
-    tags: ["React", "Node.js", "PostgreSQL", "Redis", "AWS"],
-    image: "/api/placeholder/400/250",
-    githubUrl: "https://github.com/yourusername/social-media-platform",
-    liveUrl: "https://your-social-demo.com"
+    title: "Neural Style Transfer",
+    description: "Neural Style transfer model built in Pytorch using Pretrained Vgg19 Model and Principal Component Analysis to transfer the style of one image to another",
+    category: "Research",
+    tags: ["Pytorch, Torchvision"],
+    image: "/images/projects/styletransfer.jpg",
+    githubUrl: "https://github.com/Ackshay206/Neural_Style_Transfer_PCA",
+    liveUrl: ""
   }
 ];

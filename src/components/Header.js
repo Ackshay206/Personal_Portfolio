@@ -49,13 +49,13 @@ const Header = () => {
           </div>
           
           <div className="social-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Ackshay206" target="_blank" rel="noopener noreferrer">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/ackshay-n-r/" target="_blank" rel="noopener noreferrer">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:hello@yourname.com">
+            <a href="mailto:ackshaynr485@gmail.com">
               <Mail size={20} />
             </a>
           </div>
