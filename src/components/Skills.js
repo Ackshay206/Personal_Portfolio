@@ -251,8 +251,8 @@ const Skills = () => {
       
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Technical Skills</h2>
-          <p className="section-description">
+          <h2 className="skill-section-title">Technical Skills</h2>
+          <p className="skill-section-description">
             Expertise across AI/ML technologies and modern software development
           </p>
         </div>

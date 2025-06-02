@@ -93,9 +93,9 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Featured Projects</h2>
-          <p className="section-description">
-            A showcase of my work in AI/ML, web development, and full-stack applications
+          <h2 className="project-section-title">Featured Projects</h2>
+          <p className="project-section-description">
+            A showcase of my work in AI/ML, Research, and full-stack applications
           </p>
         </div>
 
