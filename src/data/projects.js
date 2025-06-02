@@ -54,7 +54,7 @@ export const projectsData = [
     title: "Neural Style Transfer",
     description: "Neural Style transfer model built in Pytorch using Pretrained Vgg19 Model and Principal Component Analysis to transfer the style of one image to another",
     category: "Research",
-    tags: ["Pytorch, Torchvision"],
+    tags: ["Pytorch", "Torchvision"],
     image: "/images/projects/styletransfer.jpg",
     githubUrl: "https://github.com/Ackshay206/Neural_Style_Transfer_PCA",
     liveUrl: ""
