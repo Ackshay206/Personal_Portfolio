@@ -112,7 +112,7 @@ const Contact = () => {
               <Mail className="contact-icon" />
               <div className="contact-details">
                 <p className="contact-label">Email</p>
-                <p className="contact-value">hello@yourname.com</p>
+                <p className="contact-value">ackshaynr485@gmail.com</p>
               </div>
             </div>
             
@@ -120,7 +120,7 @@ const Contact = () => {
               <Phone className="contact-icon" />
               <div className="contact-details">
                 <p className="contact-label">Phone</p>
-                <p className="contact-value">+1 (555) 123-4567</p>
+                <p className="contact-value">+1 (617) 602-0781</p>
               </div>
             </div>
             
@@ -128,17 +128,17 @@ const Contact = () => {
               <MapPin className="contact-icon" />
               <div className="contact-details">
                 <p className="contact-label">Location</p>
-                <p className="contact-value">San Francisco, CA</p>
+                <p className="contact-value">Boston , MA</p>
               </div>
             </div>
 
             <div className="social-section">
               <h4 className="social-title">Follow Me</h4>
               <div className="social-links">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Ackshay206" target="_blank" rel="noopener noreferrer">
                   <Github size={24} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/ackshay-n-r/" target="_blank" rel="noopener noreferrer">
                   <Linkedin size={24} />
                 </a>
               </div>
