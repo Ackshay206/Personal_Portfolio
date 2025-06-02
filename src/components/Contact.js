@@ -1,6 +1,6 @@
-
+// Enhanced Contact.js with rate limiting and security
 import React, { useState, useRef } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react'; // Removed unused Twitter import
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
@@ -18,13 +18,7 @@ const Contact = () => {
 
   const RATE_LIMIT_MS = 60000; // 1 minute between submissions
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  // Removed unused handleInputChange function since we're using inline handlers
 
   const validateForm = () => {
     if (!formData.name.trim() || !formData.email.trim() || 
@@ -62,9 +56,9 @@ const Contact = () => {
       // Your EmailJS configuration
       const result = await emailjs.sendForm(
         'service_s2iyjfp',        // Your Service ID
-        'template_z4egs1k',        // Replace with your actual Template ID
+        'YOUR_TEMPLATE_ID',       // Your Template ID (replace this)
         form.current,
-        'N96AQ6ccWoppkzgVF'    // Replace with your actual Public Key
+        'YOUR_PUBLIC_KEY'         // Your Public Key (replace this)
       );
 
       console.log('SUCCESS!', result.status, result.text);
@@ -118,7 +112,7 @@ const Contact = () => {
               <Mail className="contact-icon" />
               <div className="contact-details">
                 <p className="contact-label">Email</p>
-                <p className="contact-value">ackshaynr485@gmail.com</p>
+                <p className="contact-value">hello@yourname.com</p>
               </div>
             </div>
             
@@ -126,7 +120,7 @@ const Contact = () => {
               <Phone className="contact-icon" />
               <div className="contact-details">
                 <p className="contact-label">Phone</p>
-                <p className="contact-value">+1 (617) 602-0781</p>
+                <p className="contact-value">+1 (555) 123-4567</p>
               </div>
             </div>
             
@@ -134,17 +128,17 @@ const Contact = () => {
               <MapPin className="contact-icon" />
               <div className="contact-details">
                 <p className="contact-label">Location</p>
-                <p className="contact-value">Boston, MA</p>
+                <p className="contact-value">San Francisco, CA</p>
               </div>
             </div>
 
             <div className="social-section">
               <h4 className="social-title">Follow Me</h4>
               <div className="social-links">
-                <a href="https://github.com/Ackshay206" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                   <Github size={24} />
                 </a>
-                <a href="https://www.linkedin.com/in/ackshay-n-r/" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                   <Linkedin size={24} />
                 </a>
               </div>
